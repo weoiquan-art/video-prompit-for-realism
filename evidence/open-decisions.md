@@ -1,50 +1,40 @@
-# 待 JIN 定的事项（作者做法与 JIN 现有做法冲突，或没有对应）
+# JIN 的决定：作者做法与 JIN 原有做法冲突的 7 处
 
-> 状态：第 1、2 项沿用 JIN 现有规则处理；第 3–7 项没有定论，写提示词时先按默认做法，JIN 随时可改。入口"待 JIN 定"是这里的缩略。每项列：作者怎么说；JIN 现在怎么做；默认做法；要 JIN 回答什么。
+> 状态：2026-10-09 JIN 回复后定下，JIN 随时可改；入口"JIN 的决定"是这里的缩略。每项列：作者怎么说；JIN 原来怎么做；决定与 JIN 原话。
 
-## 沿用 JIN 现有规则（JIN 想改可改）
 **1 静默修正 vs 不改故事**
-- 作者：发现冲突就静默修正，终稿只给改好的版本（THE MAIN CHANGE IN V4.4；FEASIBILITY VETO RULES）。
-- JIN：入口第 1 条"不改故事：已确认事实照用，假设可撤回，改变角色、顺序、结局的先问"。
-- 默认：改了视场、机位、景别、次要细节，在复制区外写一行"已调整"（本 Skill 新增，JIN 的规则只管"先问"）；牵涉人物、顺序、结局、台词的先问（台词是本 Skill 加的）。
-- 要 JIN 答：无，除非想让小调整也不留痕。
+- 作者：发现冲突就静默修正，终稿只给改好的版本；修正时先保核心情绪与叙事意图、参考身份、必要站位、台词，再调光学、机位距离、景别、次要细节，最后去掉非必要的风格或物件要求（THE MAIN CHANGE IN V4.4；FEASIBILITY VETO RULES）。
+- JIN 原来：通用仓库入口第 1 条"不改故事：已确认事实照用，假设可撤回，改变角色、顺序、结局的先问"。
+- 两边都不改故事；差别只在技术调整改完说不说。
+- 决定：沿用 JIN 的规则。技术调整照作者做，在复制区外写一行"已调整"（本 Skill 新增）；牵涉人物、顺序、结局、台词的先问（台词是本 Skill 加的）。JIN 2026-10-09 问"我的做法不改故事是什么意思"，听完解释答"不改故事 没关系"。
 
 **2 风格段放在哪**
-- 作者：成稿结构里 LOCATION MAP、FIRST FRAME 排在 STYLE 之前（FINAL PROMPT ARCHITECTURE；"Critical spatial information comes before style."）。
-- JIN：核心原则里说要在动作、秒针之前加一堆风格提示词，不然不会脑补的模型不知道要什么。
-- 默认：沿用 JIN；"画地图"只当写前准备，镜头行内部才用"空间先于风格"。
-- 要 JIN 答：无。
+- 作者：14 块里 STYLE 排第 12，在 ACTION TIMING（第 8）之后；"Critical spatial information comes before style."（FINAL PROMPT ARCHITECTURE；OPERATING LOOP）
+- JIN 原来：核心原则"我们需要在动作 秒针之前加一堆风格提示词"。
+- 决定：照作者顺序，风格块在动作时间轴之后。核心原则原文不改，这一点在本 Skill 先不照做。JIN 2026-10-09："关于我的风格词站 提示词前面 目前先不用遵守 作者这么做肯定有原因目前我们还未尝试"。
 
-## 没有定论（默认做法先执行）
 **3 度数还是毫米**
-- 作者：视场角度数是主要数值语言，毫米只作括注；避免写 16mm、24mm、光圈、ISO 之类（OPTICS RULES）。
-- 作者的条件：避免这类写法 "unless the user explicitly asks for film-technical language"；JIN 的槽位格式本来就写毫米，属于这个例外。
-- JIN：槽位模板【镜头】写毫米，如"50mm"；通用仓库的早期 cinedance-v4 分支写"JIN 主 Skill 不强制每镜使用固定角度"。
-- 默认：同一个值的两种写法，如"84°（约 24mm）"，不算备选。
-- 要 JIN 答：A 度数为主、毫米括注（作者）；B 毫米为主、度数括注；C 只写毫米（现状）。
+- 作者：视场角度数是主要数值语言；毫米只在用户提到、或有助于说明意图时作括注；避免 "16mm, 24mm, anamorphic Cooke, f/2.8, ISO 800." 这类写法，除非用户明确要胶片技术语言（OPTICS RULES）。
+- JIN 原来：槽位模板【镜头】写毫米，如"50mm"。
+- 决定：跟作者。JIN 2026-10-09："作者skill 是使用什么度数还是毫米 都跟着作者"。
 
 **4 否定块**
-- 作者：不单独写否定块，重要的禁止项写成正向约束（FINAL PROMPT ARCHITECTURE）；但作者自己的质量锁句里有 "no ghosting"、"no flicker" 这类否定词。
-- JIN：槽位模板有【全局限制】和每段"限制条件"；通用仓库的证据说明里记着他的经验"负面提示写短写具体放末尾"，通用仓库必读第 9 条写"限制条件短而具体，只保护关键结果"，C21 写"画面内容优先正向描述…能用正向状态说清就不用否定"。
-- 看法：方向与作者接近（正向优先、禁止项少而具体），差别主要在形式——作者要求写进相关段落、不单独成块，JIN 的格式有独立的限制字段。
-- 默认：正向优先；必须的禁止项短而具体；JIN 的两个限制字段保留。
-- 要 JIN 答：A 按默认；B 改成纯正向、取消限制字段；C 全部沿用现有格式、不再提正向优先。
+- 作者：不单独写否定块，重要的禁止项写成正向约束放进相关段落（FINAL PROMPT ARCHITECTURE）；作者自己的质量锁句里仍有 "no ghosting"、"no flicker"。
+- JIN 原来：槽位模板有【全局限制】和每段"限制条件"。
+- 决定：跟作者，随第 6 项（用作者的结构）一起定。
 
 **5 输出语言**
-- 作者：最终提示词写英文（IDENTITY）。
-- JIN：平台是豆包、LibTV，提示词是中文。
-- 默认：写中文；作者的英文句子只当写法参考，不整段照搬。
-- 要 JIN 答：是否有需要写英文提示词的平台或场合。
+- 作者："Final Seedance/Higgsfield prompts are normally written in clean cinematic English."（IDENTITY）；cinematic-prompt-toolkit 也默认终稿写英文。
+- JIN 原来：豆包、LibTV 上写中文提示词。
+- 已知（2026-10-06 的跨来源调查，官方文档多为摘要）：中文、英文都支持（建议中文不超过 500 字、英文不超过 1000 词）；没有可靠来源说哪种效果更好；官方要求每句台词只用一种语言。
+- 决定：写中文。块名和作者定句（锁定句、质量锁、急变焦）用整理者的中文译法（R04）；台词照 JIN 给的原文。中英效果差别没测过。JIN 2026-10-09："输出语言可以保留中文？ 因为我看了作者画布也是使用的中文"。
 
-**6 真人写实模板**
-- 作者：给的是 14 块的英文成稿结构，不是模板文件；和 JIN 的槽位格式不同。
-- JIN：通用仓库有槽位模板，含【真人专属补充】【漫剧专属补充】两行，各自注明不适用时整行删除。
-- 默认：沿用槽位模板，删去【漫剧专属补充】，保留【真人专属补充】（通用仓库里唯一的样例写的是："无AI失真脸、皮肤保留自然毛孔纹理、无过度磨皮美白、手部动作自然无畸形"，来自古风乌鸦那条作者提示词的原模板行）；没有专用的真人模板。
-- 多镜头时：【镜头】一行只有一个全片基准视场，某镜需要不同视场（广角空间镜、特写表演镜）就写进该段的"景别"和内容里（R08）。
-- 要 JIN 答：是否要做真人专用模板（等有几次成片之后再定也行）。
+**6 模板**
+- 作者：给的是 14 块的成稿结构（SCENE CONTEXT 到 POSITIVE CONSTRAINTS），没有填好的完整范例（FINAL PROMPT ARCHITECTURE）。
+- JIN 原来：通用仓库的槽位模板。
+- 决定：用作者的 14 块、照作者顺序，块名写中文（R04）。
 
-**7 镜头锁定句与质量锁句**
-- 作者：镜头锁定写 "84° diagonal field of view, classic wide rectilinear character. Lens locked for the whole shot."；质量锁写 "Sharp clarity, stable picture, natural colours, readable faces, controlled highlights, no ghosting, no flicker."；动作镜头不写"无模糊"（OPTICS RULES；QUALITY RULES）。
-- JIN：槽位模板头部有【镜头】一行和【全局限制】"全程无超帧、无画面畸变、无多余空镜、无穿帮"，"无超帧"的确切含义没核实。
-- 默认：把"整个镜头视场锁定"并进【镜头】一行（有意变焦的镜头除外）；质量锁不另加整句（通用规则第 8 条不额外加质量词；【全局限制】已有同类约束，但内容不同——作者的质量锁还要求自然色彩、可读的脸、受控的高光）；静态或慢镜头确实需要时按 R16 加一句；快动作镜头按 R13 写运动模糊。
-- 要 JIN 答：A 按默认；B 把作者两句整句加进复制区；C 都不加。
+**7 镜头锁定与质量锁**
+- 作者：镜头锁定写 "84° diagonal field of view, classic wide rectilinear character. Lens locked for the whole shot."；急变焦镜头改写 "Lens/FOV change is limited to the single timed crash zoom; no other lens drift."；质量锁静态或慢镜写 "Sharp clarity, stable picture, natural colours, readable faces, controlled highlights, no ghosting, no flicker."，动作镜头写 R13 那句；"Do not use “no blur” as a universal suffix."（OPTICS RULES；Crash zoom；QUALITY RULES）
+- JIN 原来：槽位模板头部【镜头】一行与【全局限制】。
+- 决定：跟作者，写成中文（R04）。JIN 2026-10-09："镜头也是 锁不锁跟着作者"；质量锁和镜头锁定是同一项，一并跟作者。

@@ -11,7 +11,7 @@
 6. 演员发僵：加与台词相连的、有动机的听者反应，不是不停乱动（见 R11）。
 7. 动作卡顿或 FPS 掉：用自然 180° 快门运动节奏、稳定时间节奏、可读的冲击停顿；去掉过多的速度线、混乱镜头和"no blur"（见 R13）。
 避免：一出问题就整段重写；只改数字不改内容。
-注意：作者在终检里的做法是 "patch the relevant section only"——只补出问题的那一段（见 R20），与通用仓库的"排查一次只改一层"同向。
+注意：作者在终检里的做法是 "patch the relevant section only"——只补出问题的那一段（见 R20）。
 
 **R19 审查口径：不扣分与应扣分｜作者原则[AUDITOR COMPATIBILITY]**
 写法：作者写给"独立审查者"（cinedance-auditor，我们没有这个 Skill）的口径，这里只取口径。
@@ -22,8 +22,8 @@
 - should punish: stale references; invented locations; extra characters; wrong first frame; impossible camera placement; lens/content mismatch; unclear gaze/body orientation; weak geography in complex scenes; unwanted dialogue/music/subtitles; hidden negative block when user did not ask; formal compliance that preserves a bad shot design.
 避免：为满足清单而加约束；用清单代替对镜头设计本身的判断（"formal compliance that preserves a bad shot design" 本身要扣分）。
 注意：
-- 本 Skill 的处理（非作者原文）：JIN 的槽位模板里【全局限制】和每段"限制条件"是 JIN 自己的格式，不算"藏起来的否定块"；"没有单独的否定块"在 JIN 的格式里不适用，是否改变见入口"待 JIN 定"第 4 项。
-- 通用仓库的审查口径（成片复查、生成前预检）在其 T8，本仓库不复制。
+- 本 Skill 的处理（非作者原文）：本 Skill 用作者的 14 块、不单独写否定块（入口"JIN 的决定"第 2、4 项），这套口径照用。
+- 成片复盘归 video-exp；本卡只管提示词本身的审查。
 
 **R20 终检清单（作者 16 项）与入口自检的对应｜作者原则[FINAL SELF-CHECK BEFORE OUTPUT]**
 写法：作者要求输出前默默检查这 16 项（译）：
@@ -44,5 +44,5 @@
 15. 用户没要求时，没有自己发明创意手法吗？
 16. 没有为了满足清单而加内容吗？
 需要修就只补相关段落："If a fix is needed, patch the relevant section only."
-入口自检 12 项的对应（本 Skill 的合并，非作者原文）：入口 1＝JIN 的"删抽象词再读"；入口 2＝作者 1 与 R01；入口 3＝作者 2、3；入口 4＝作者 4；入口 5＝作者 5、6；入口 6＝作者 7、8；入口 7＝作者 9；入口 8＝作者 10 与 R11；入口 9＝作者 11 与 R13；入口 10＝作者 12；入口 11＝作者 14、15；入口 12＝作者 13、16 与通用的"没加剧情、人物、对白、能力"。作者 16 项全部覆盖。
+入口自检 12 项的对应（本 Skill 的合并，非作者原文）：入口 1＝JIN 的"删抽象词再读"；入口 2＝作者 1 与 R01；入口 3＝作者 2、3 与 R08 的度数、锁定句；入口 4＝作者 4；入口 5＝作者 5、6；入口 6＝作者 7、8；入口 7＝作者 9；入口 8＝作者 10 与 R11；入口 9＝作者 11 与 R13；入口 10＝作者 12；入口 11＝作者 14、15；入口 12＝作者 13、16、R04 的不单独写否定块，与 JIN 的"没加剧情、人物、对白、能力"。作者 16 项全部覆盖。
 避免：把清单当成要填满的表格；检查通过了但镜头设计本身不可行。

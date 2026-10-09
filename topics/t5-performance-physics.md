@@ -24,7 +24,6 @@ Oli constantly fidgets, cracks knuckles, breathes, smirks, gestures, shifts, sta
 - 车辆：轮胎接地、悬挂、引擎震动、车身侧倾、湿地反光、车灯溢光。
 - "Do not let style override physics."
 避免：让风格压过物理；只写结果不写受力和恢复。
-注意：与通用仓库的"动作有过程""接触与持有闭合"同向；本卡不复制通用仓库的卡。
 
 **R13 180° 快门运动模糊与动作质量锁｜作者原则[180-DEGREE SHUTTER / MOTION BLUR RULE；QUALITY RULES：action；COMMON FAILURE FIXES：If action stutters or FPS drops]**
 写法：用户要自然运动、FPS 稳定或动作清晰时用。"Do not write “no blur” for moving action. That can make motion strobe, judder, or look like dropped frames."
@@ -49,5 +48,4 @@ Sharp readable impact poses with natural cinematic motion blur during fast movem
 避免：把"无模糊"当通用后缀；用堆速度线和混乱镜头去补动感。
 注意：
 - 作者把"180° 快门自然模糊"也列在 R09 的时间／运动类手法里，但本卡的用法是按需：用户要自然运动、帧率稳定或动作清晰时用，不是每个镜头都要加的装饰（整理者归纳）。
-- 整理者核对：这些句子本身带 "no ghosting""no stutter" 这类否定短语，是作者自己的写法；是否改写成纯正向，见入口"待 JIN 定"第 4 项。
-- JIN 的槽位模板头部有【全局限制】"全程无超帧"，含义与作者的 "no frame-skipping stutter" 接近，但"超帧"的确切意思未核实；先不改。入口"待 JIN 定"第 7 项处理两者并存。
+- 整理者核对：这些句子本身带 "no ghosting""no stutter" 这类否定短语，是作者自己的写法，照用；中文写法见 R04（入口"JIN 的决定"第 7 项）。

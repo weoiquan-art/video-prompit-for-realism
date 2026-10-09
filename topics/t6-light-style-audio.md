@@ -17,7 +17,7 @@
 写法："Only include dialogue if the user specifies dialogue." 有对白时：用确切的台词；用户给了时序就保留；不即兴加词；不加额外的说话人（no extra voices）；除非要求，不加字幕；除非要求，不加音乐；一次只有一个人说话，除非明确写了重叠。
 声音要支撑镜头节奏：雨、织物、呼吸、远处车流、俱乐部低频、引擎、冲击、蒸汽、脚步、静默。"Do not add narration."
 避免：自己加台词、旁白、字幕、音乐；两个人同时说话而没有写明重叠。
-注意：与通用仓库"声音与对白挂在动作或时间点上"同向；通用仓库的台词符号写法（如 {台词}）见其 T4，本仓库不复制。
+注意：台词照 JIN 给的原文，不改写（作者："use exact line text"）。
 
 **R16 风格与质量锁（静态与慢镜头）｜作者原则[STYLE RULES；QUALITY RULES：still or slow dramatic shots]**
 写法：
@@ -29,4 +29,4 @@ Sharp clarity, stable picture, natural colours, readable faces, controlled highl
 ```
   动作镜头的质量锁见 R13；"Do not use “no blur” as a universal suffix."
 避免：堆导演名和空泛的名牌词；风格压过镜头任务；把"无模糊"当通用后缀。
-注意：是否把这句质量锁整句写进复制区，见入口"待 JIN 定"第 7 项（默认不再另加，因为 JIN 的【全局限制】已承担同类作用）。
+注意：JIN 2026-10-09 定：质量锁跟作者，静态或慢镜在【质量】块写这一句，中文写法见 R04（入口"JIN 的决定"第 7 项）。

@@ -9,4 +9,3 @@
 - 场景参考：总要分清它管什么、不管什么："Always separate what a location reference controls from what it does not control." 可以管：几何；材质；布局；地标位置；氛围；实景光源。不自动管："A location reference does not automatically control:" 后接列表：camera angle；framing；story identity；added props；added people；shot order。
 - 不从泛泛的场景杜撰故事身份："Do not invent story identity from a generic location." 作者例：参考是后巷，就不要改叫孤儿院、医院、学校、警察局或俱乐部，除非用户明说。
 避免：过期或杜撰的图号；参考已经锁定身份还大段重复描述；让场景参考顺带决定机位、构图和剧情。
-注意：通用仓库的"参考逐张分工：提供什么、不采用什么、冲突听谁""多角色用名字（对应图片N）"同向，本仓库不复制；"人数多时拆组"也在通用仓库。

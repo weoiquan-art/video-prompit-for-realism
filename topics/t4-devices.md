@@ -24,7 +24,7 @@ British crime-comedy kinetic camera language: a low wide rectilinear frame with 
 避免：只写手法名；把手法悄悄磨平成普通镜头；没要却自作主张加手法；手法没有触发、起落、停留。
 注意：
 - 整理者核对：作者的变焦推轨例子（dolly zoom）自相矛盾，不能当模板照抄。原文："The requested dolly-zoom tension is treated as a controlled perspective-change effect: the camera slowly tracks 0.8 m closer while the FOV narrows from 84° to 47° over 2 seconds on Cal’s realization, keeping his face the same size as the alley behind him appears to stretch away; the move lands in a stable readable close framing." 机位推近 0.8 米、同时视场从 84° 收窄到 47°，两件事都会让脸变大，不可能"保持脸的大小"。要脸大小不变，推近应配合视场变宽，或拉远配合视场变窄。写变焦推轨时先自己核对方向。
-- 作者的手法例子以英美电影语言为主（也有王家卫和俄语口语 ширик）；没有我们的生成验证。
+- 作者的手法例子以英美电影语言为主（也有王家卫和俄语口语 ширик）。
 - 含义含糊先问还是先猜：作者倾向先按物理镜头语言保留可能意图，只在含糊会改变整个镜头时才问。本 Skill 的处理（非作者原文）：会改变整个镜头的含糊，先问 JIN 一次，用选择题（入口流程第 1 条）。
 
 **R10 具体手法的写法：Guy Ritchie 式能量、急变焦、荷兰角、激进广角、甩镜、手法密度｜作者原则[UNIVERSAL CREATIVE DEVICE TRANSLATOR：各小节]**
@@ -55,4 +55,4 @@ On the shouted word, the camera snap-pans from Cal’s pointing hand to Oli’s 
   规则：触发在先、运动其次、落点停住第三；甩的过程中运动模糊自然；落点画面必须可读；除非风格有意狂乱，不要在对白中连续甩。
 - 手法密度：手法要稀、要占主导。一个短镜通常只选一个主手法——一个荷兰角构图，或一次急变焦，或一次甩重构图，或一个激进广角前景构图，或一个长焦监视压缩。两个手法只有在一个是静态、一个是定时的时候才能合用。好例："Held 12° Dutch angle plus one crash zoom on the punchline." 坏例："Dutch angle, crash zooms, whip pans, rack focus, handheld shake, rotating camera and extreme wide lens during subtle dialogue."
 避免：在一个短镜里叠多个手法；急变焦没有触发或没有停留；把荷兰角当成换机位侧；用 84° 当真 16mm；把风格名当成镜头。
-注意：整理者核对：荷兰角度数这里是 8–15°／15–25°，R06 里是 10–20°，作者两处不完全一致；急变焦 0.35 秒、荷兰角 12° 是作者的例子数值，不是验证过的规格。
+注意：整理者核对：荷兰角度数这里是 8–15°／15–25°，R06 里是 10–20°，作者两处不完全一致；急变焦 0.35 秒、荷兰角 12° 是作者例子里的数值，不是固定规格。

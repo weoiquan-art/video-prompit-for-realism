@@ -30,7 +30,7 @@ The three men stand tight together in the mid-depth of the alley, just out from 
 坏例（只有坐标）：`Cal x 46%, Oli x 53%, Horace x 60%.`
 中文写法示意（意译，非作者原文）：三个人在小巷中景站得很近，离左边砖墙后门不远；甲在人群左侧、最靠近红灯，乙居中，丙在右侧，三人彼此都在 1–1.5 米以内；画面上甲约 46%、乙约 53%、丙约 60%。
 避免：只有坐标没有物理关系；每镜重新发明地理。
-注意：这是写前的准备，不是提示词里的段落顺序。作者的成稿结构把地图和第一帧排在风格之前；本 Skill 的全局顺序仍按 JIN 的核心原则，把风格段放在时间轴之前（见 R04 与入口）。
+注意：这是写前的准备。作者的成稿结构也把地图和第一帧排在风格之前（R04）。
 
 **R04 提取当前镜头、成稿结构与正向约束｜作者原则[OPERATING LOOP：Diagnose the shot、Write the final prompt；OUTPUT BEHAVIOR；FINAL PROMPT ARCHITECTURE]**
 写法：
@@ -41,10 +41,11 @@ The three men stand tight together in the mid-depth of the alley, just out from 
 - 正向约束："Do not include a separate NEGATIVE CONSTRAINTS block unless the user explicitly asks." "If a prohibition is important, integrate it as a positive constraint inside the relevant section." 好例："Exactly three named characters appear in the alley: @CAL, @OLI and @HORACE." 弱例："No extra people."
 - 交付行为：要提示词就给干净的终稿；用户说 final 或 copy-paste 时只输出干净终稿；要分析、审查、测试、系统工作就简明实用地说；不展示内部草稿、审计表、隐藏推理、失败笔记、修正循环，除非明确要求。长提示词、修订、失败的生成用"文件优先"：保留强的段落、只补弱的段落、留一份能用的提示词作真源、需要时再另编干净终稿。
 本 Skill 的处理（非作者原文）：
-- 全局顺序：JIN 的核心原则要求风格段放在秒针（时间轴）之前，沿用 JIN 的槽位格式；"空间先于风格""相机先于情绪"只用在每个镜头行内部的写法顺序。
-- 整理者核对：内容性的禁止项仍应改写成正向（作者的弱例就是 "No extra people."）。作者自己的质量锁句里有 "no ghosting"、"no flicker" 这类否定词（见 R13、R16），那是作者的惯用写法，不能推广成"可以堆否定词"。JIN 的【全局限制】与每段"限制条件"是 JIN 自己的格式，不算作者说的"隐藏的否定块"（R19）。是否改成纯正向写法，见入口"待 JIN 定"第 4 项。
+- 成稿顺序（JIN 2026-10-09 定）：照作者的 14 块顺序，风格块在动作时间轴之后。JIN："关于我的风格词站 提示词前面 目前先不用遵守 作者这么做肯定有原因目前我们还未尝试"。
+- 整理者核对：作者自己的质量锁句里有 "no ghosting"、"no flicker" 这类否定词（见 R13、R16），照作者用；内容性的禁止项仍写成正向（作者的弱例就是 "No extra people."）。
 - "复述＋已调整"写在复制区外，复制区只放干净提示词。复制区干净与作者一致；区外加这些说明是本 Skill 的偏离（作者不展示修正过程，也不留"已调整"）。
-- 槽位字段 → 读哪张卡（本 Skill 的建议）：【摄影机+胶片/质感】【真人专属补充】→ R16、R14；【镜头】→ R08；【全局限制】与每段"限制条件"→ 本卡的正向约束、R13、R16；【人物/物品设定】与"出镜人物"→ R17；"运镜"→ R07、R09、R10；"景别"→ R08、R11；"地点/场景""主体""画面位置"→ R03、R05；"台词"→ R15；"表情"→ R11；"画面动作"→ R12、R13。
-- 作者结构里的 FORMAT MODE 一块，v4.4.2 原文没有展开；通用仓库的早期分支（skills/practical-case-skills/cinedance-v4）§7 写过：先决定单一连续镜头还是受控多镜头序列，默认不让模型自己发明随机切镜。可作参考。
-- 分辨率、画幅、帧率若由平台界面控制，可以省略（R19 不扣分项）；JIN 的槽位模板头部自带这些字段，保留或省略由 JIN 指定。
+- 中文块名与读哪张卡（JIN 2026-10-09 定写中文；块名是整理者译法）：【场景背景】SCENE CONTEXT → R02；【有效参考】ACTIVE REFERENCES → R17；【场地地图】LOCATION MAP → R03；【第一帧与站位】FIRST FRAME AND SPATIAL BLOCKING → R05；【格式】FORMAT MODE → 下一条；【视场】OPTICS → R08；【机位】CAMERA → R06、R07、R09、R10；【动作时间轴】ACTION TIMING → R02、R11、R12；【物理】PHYSICS → R12、R13；【光线】LIGHTING → R14；【声音】AUDIO → R15；【风格】STYLE → R16；【质量】QUALITY → R16、R13；【正向约束】POSITIVE CONSTRAINTS → 本卡的正向约束。
+- 作者定句的中文写法（整理者译法，不是作者原文）：锁定句"整个镜头视场锁定"（"Lens locked for the whole shot."）；急变焦"视场变化只限这一次定时急变焦，其余时间镜头不漂移"（"Lens/FOV change is limited to the single timed crash zoom; no other lens drift."）；静态或慢镜质量锁"画面锐利清晰、稳定，色彩自然，脸部可读，高光受控，无重影，无闪烁"（"Sharp clarity, stable picture, natural colours, readable faces, controlled highlights, no ghosting, no flicker."）；动作质量锁"冲击姿态锐利可读，快速运动带自然的电影运动模糊；时间节奏稳定，无重影，无重复肢体，无跳帧卡顿"（"Sharp readable impact poses with natural cinematic motion blur during fast movement; stable temporal cadence, no ghosting, no duplicated limbs, no frame-skipping stutter."）。
+- FORMAT MODE 在 v4.4.2 原文里没有展开；作者早期 V4 的整理稿（通用仓库 skills/practical-case-skills/cinedance-v4 §7）写的是：先定单一连续镜头还是受控多镜头序列，默认不让模型自己发明随机切镜。按这个意思写。
+- 分辨率、画幅、帧率由平台界面控制时省略（作者：OUTPUT SETTINGS 只在用户要求、或平台界面不管这些设置时才写）。
 避免：把旧镜头的角色、图号、道具带进新镜头；用"不要…"堆一串禁止项代替把想要的结果写出来。
