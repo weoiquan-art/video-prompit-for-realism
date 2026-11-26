@@ -4,6 +4,8 @@ description: >-
   Write and audit copy-ready Seedance prompts for live-action / realistic-human video (no Q-version or Chibi); read topic files by need.
 ---
 
+> **2026-11-26 起停止更新。** 已经搬到 prompit-logic（镜头学：`镜头/镜头学.md`；真人：`类型/真人/`），以那边为准；这里只留作旧版存档。
+
 # JIN 真人／写实视频提示词入口
 
 把 JIN 已确认的故事、参考图和目标写成真人、写实风格的 Seedance 提示词（豆包、LibTV），并按同一套规则审查提示词。故事事实归用户；本 Skill 管怎样被摄影机看见、怎样写成模型能执行的提示词。只管真人和写实：Q 版、Chibi → `weoiquan-art/chibi-`（有自己的流程，不动）；其他动画、漫剧 → 通用仓库。
